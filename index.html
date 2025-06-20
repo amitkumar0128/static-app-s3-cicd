@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Roadmap Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">DevOps Explorer</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Master DevOps</h1>
+            <p>Your comprehensive guide to becoming a DevOps engineer. Explore tools, learn concepts, and build your career roadmap.</p>
+            <a href="#roadmap" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="🔍 Search for DevOps tools..." onkeyup="searchTools(this.value)">
+        </div>
+    </section>
+
+    <!-- Tool of the Day -->
+    <section class="roadmap-section">
+        <div class="tool-of-day">
+            <h3>🚀 Tool of the Day</h3>
+            <div class="highlighted-tool" id="toolOfDay">
+                <strong>Loading...</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section" id="roadmap">
+        <h2 class="section-title">DevOps Roadmap</h2>
+        <div class="category-grid" id="categoryGrid">
+            <!-- Categories will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <h2 class="section-title">DevOps by Numbers</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Essential Tools</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Core Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Free Resources</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Learning Opportunities</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#contribute">Contribute</a>
+                <a href="#feedback">Feedback</a>
+            </div>
+            <p class="footer-text">© 2025 DevOps Roadmap Explorer. Empowering your DevOps journey.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="toolModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon">T</div>
+                <div>
+                    <h3 class="modal-title" id="modalTitle">Tool Name</h3>
+                </div>
+            </div>
+            <p class="modal-description" id="modalDescription">Tool description...</p>
+            <div class="modal-links" id="modalLinks">
+                <!-- Links will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
